@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viduržemio Delikatesai - pop-up preview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#3a3a3a; font-family:'Inter',Arial,sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px; }
+  .popup { width:520px; max-width:100%; background:#FFFDF8; border:1px solid #e6ddc8; box-shadow:0 24px 60px rgba(0,0,0,.4); overflow:hidden; }
+  .topbar { background:#2B2B2B; color:#C9A24B; text-align:center; font-size:11px; letter-spacing:3px; text-transform:uppercase; padding:9px; font-weight:600; }
+  .body { padding:38px 40px 34px; text-align:center; }
+  .logo { font-family:'Cormorant Garamond',Georgia,serif; font-size:15px; letter-spacing:4px; text-transform:uppercase; color:#2B2B2B; margin-bottom:22px; }
+  .logo span { color:#C9A24B; }
+  .badge { display:inline-block; background:#C9A24B; color:#FFFDF8; font-size:12px; font-weight:600; letter-spacing:1.5px; padding:6px 16px; border-radius:20px; margin-bottom:18px; }
+  h1 { font-family:'Cormorant Garamond',Georgia,serif; font-size:34px; font-weight:600; color:#2B2B2B; line-height:1.15; margin-bottom:14px; }
+  .sub { font-size:14.5px; color:#5a5348; line-height:1.6; margin-bottom:26px; }
+  .field { width:100%; padding:14px 16px; border:1px solid #C9A24B; background:#fff; font-size:14px; color:#2B2B2B; margin-bottom:12px; font-family:'Inter',Arial,sans-serif; }
+  .field::placeholder { color:#9a9384; }
+  .btn { width:100%; padding:15px; background:#2B2B2B; color:#FFFDF8; border:none; font-size:13px; letter-spacing:2px; text-transform:uppercase; font-weight:600; cursor:pointer; font-family:'Inter',Arial,sans-serif; }
+  .decline { display:block; margin-top:16px; font-size:12.5px; color:#9a9384; text-decoration:underline; }
+  .fine { margin-top:20px; font-size:10.5px; color:#a8a191; line-height:1.5; }
+  .divider { width:44px; height:2px; background:#C9A24B; margin:0 auto 20px; }
+</style>
+</head>
+<body>
+  <div class="popup">
+    <div class="topbar">Viduržemio elegancija Jūsų namuose</div>
+    <div class="body">
+      <div class="logo">VIDURŽEMIO <span>DELIKATESAI</span></div>
+      <div class="divider"></div>
+      <div class="badge">-10 % PIRMAJAM UŽSAKYMUI</div>
+      <h1>Išskirtiniam skoniui</h1>
+      <p class="sub">Prenumeruokite naujienas ir gaukite 10 % nuolaidą pirmajam užsakymui. Pirmieji sužinokite apie gurmaniškas naujienas ir kruopščiai atrinktas kolekcijas.</p>
+      <input class="field" type="email" placeholder="Jūsų el. pašto adresas">
+      <button class="btn">Gauti 10 % nuolaidą</button>
+      <a class="decline" href="#">Ne, ačiū</a>
+      <p class="fine">Nuolaida netaikoma jau nukainotoms ir akcijinėms prekėms. Naujienlaiškių prenumeratos galite bet kada atsisakyti.</p>
+    </div>
+  </div>
+</body>
+</html>
